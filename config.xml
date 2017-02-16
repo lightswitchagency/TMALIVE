@@ -6,8 +6,7 @@
         version="2.0.0.1">
     <name>Total Kenya E-Shop Manager</name>
     <description>
-        Total Kenya E-Shop Manager. For Admins and delivery team 
-    </description>
+        Total Kenya E-Shop Manager. For Admins and delivery team     </description>
 
     <author href="http:creativeyr.co.ke" email="b.mwangi@creativeyr.co.ke">CreativeYR - Boniface Kibicho</author>
     <access origin="*"/>
