@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
-        id="com.phonegap.totalkenyashop"
-        versionCode="1522147"
+        id="com.totalkenya.shop"
+        versionCode="1522149"
         version="2.0.0.1">
     <name>Total Kenya E-Shop Manager</name>
     <description>
