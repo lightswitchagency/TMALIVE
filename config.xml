@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.phonegap.totalkenyashop"
+        versionCode="1522147"
+        version="2.0.0.1">
+    <name>Total Kenya E-Shop Manager(DEMO)</name>
+    <description>
+        Total Kenya E-Shop Manager. For Admins and delivery team 
+    </description>
+
+    <author href="http:creativeyr.co.ke" email="b.mwangi@creativeyr.co.ke">CreativeYR - Boniface Kibicho</author>
+    <access origin="*"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification"/>
+    </feature>
+    <preference name="loadUrlTimeoutValue" value="100000" />
+    <preference name="orientation" value="default"/>
+    <preference name='phonegap-version' value='cli-5.1.1' />
+    <preference name="target-device" value="universal"/>
+    <preference name="fullscreen" value="false"/>
+    <preference name="show-splash-screen-spinner" value="true"/>
+    <gap:splash src="splash.png"/>
+    <gap:plugin name="cordova-plugin-whitelist" source="npm"  />
+    <icon src="icon.png"/>
+    <icon src="images/icon-36.png" gap:platform="android" gap:density="ldpi"/>
+    <icon src="images/icon-48.png" gap:platform="android" gap:density="mdpi"/>
+    <icon src="images/icon-72.png" gap:platform="android" gap:density="hdpi"/>
+    <icon src="images/icon-96.png" gap:platform="android" gap:density="xhdpi"/>
+
+</widget>

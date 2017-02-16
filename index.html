@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="themes/css/custom-theme.css">
+    <link rel="stylesheet" href="themes/css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="themes/css/jquery.mobile.structure-1.4.5.min.css"/>
+    <link rel="stylesheet" href="themes/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="themes/fonts/flaticon.css"/>
+    <link rel="stylesheet" href="themes/fonts/stylesheet.css">
+    <link rel="stylesheet" href="themes/css/total-custom.css"/>
+    <link rel="stylesheet" href="themes/css/addon.css"/>
+    <!--
+        <link rel="stylesheet" href="themes/css/addon.css"/> <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+     <script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+     -->
+    <script src="themes/js/jquery-2.1.4.min.js"></script>
+    <script src="themes/js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="themes/js/function.js"></script>
+    <script src="themes/js/json.js"></script>
+    <!--
+    <script src="themes/js/local-mobile.js"></script>
+    -->
+    <!--  -->
+	<script src="cordova.js"></script>
+    <script type="text/javascript" src="PushNotification.js"></script>
+
+
+ </head>
+ <body>
+ <div id="wrapper">
+     <div id="container">
+         <div data-role="panel" id="mainmenu" class="jqm-navmenu-panel" data-position="left" data-display="overlay"
+              data-theme="a">
+             <ul id="mainmenu-ul" class="main-menu">
+                 <li class="ui-btn ui-btn-icon-right ui-icon-home"><a data-transition="slide"
+                                                                      href="storemanager/index.html"> <i
+                         class="fa fa-fw fa-home"></i> <span>Home</span></a></li>
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r"><a data-transition="slide"
+                                                                         href="storemanager/orders.html">
+                     <i class="fa fa-fw fa-shopping-cart"></i> <span>Orders</span></a></li>
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r"><a data-transition="slide"
+                                                                         href="storemanager/customers.html"> <i
+                         class="fa fa-fw fa-users"></i> <span>Customers</span></a></li>
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r"><a data-transition="slide"
+                                                                         href="storemanager/products.html"> <i
+                         class="fa fa-fw fa-dropbox"></i> <span>Products</span></a></li>
+
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                     <a data-transition="slide"  class="signout"  href="index.html">
+                         <i class="fa fa-fw fa-sign-out"></i> <span>Sign Out</span> </a></li>
+
+             </ul>
+         </div>
+
+         <div data-role="panel" id="deliverymenu" class="jqm-navmenu-panel" data-position="left" data-display="overlay"
+              data-theme="a">
+             <ul id="deliverymenu-ul" class="main-menu">
+
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r"><a data-transition="slide"
+                                                                         href="delivery/orders.html">
+                     <i class="fa fa-fw fa-shopping-cart"></i> <span>Orders</span> </a></li>
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r"><a data-transition="slide"
+                                                                         href="delivery/customers.html">
+                     <i class="fa fa-fw fa-users"></i> <span>Customers</span> </a></li>
+
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r"><a data-transition="slide"
+                                                                         href="#">
+                     <i class="fa fa-fw fa-list"></i> <span>Logs</span> </a></li>
+
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                     <a data-transition="slide"  href="#">
+                     <i class="fa fa-fw fa-gears"></i> <span>Settings</span> </a></li>
+
+                 <li class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                     <a data-transition="slide"  class="signout"  href="index.html">
+                     <i class="fa fa-fw fa-sign-out"></i> <span>Sign Out</span> </a></li>
+
+             </ul>
+         </div>
+
+         <main id="main-panel">
+
+             <div id="login" class="login-register" data-theme="a" data-role="page">
+                 <div data-role="header" class="hidden" data-theme="a">
+                     <h1>TotalShop Mobile Assistant </h1>
+                 </div>
+                 <!-- /header -->
+                <div role="main" data-theme="a" class="ui-content">
+
+                    <div class="  col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12  col-xs-12 maincols">
+                                <div class="totallogo wow fadeInDown" data-wow-duration="1200ms"
+                                     data-wow-delay="1200ms">
+                                    <img src="themes/images/total-logo.png" class="img-responsive" width="140">
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-xs-12 app-title ">
+                                <label>TOTAL Kenya e-shop manager </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="clearfix"></div>
+                                <div class="clearfix"></div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="col-sm-12 col-xs-12">
+                                <div class="box-body indexbox">
+                                    <div class="form-group">
+                                        <label for="shop-select">Shop Url </label>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-link"></i></span>
+                                            <select data-role="none" class="form-control" id="shop-select">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"> <i class="fa fa-user"></i></span>
+                                            <input type="text" placeholder="username" data-role="none" value=""
+                                                   id="username"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                            <input type="password" placeholder="Password" data-role="none" id="password"
+                                                   value=""
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary setup" data-role="none" type="submit">
+                                            Login
+                                        </button>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="notification clearfix text-danger text-center"></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /content -->
+            </div>
+
+        </main>
+    </div>
+</div>
+<input type="hidden" value="" id="s_user_name">
+<input type="hidden" value="" id="s_user_id">
+<input type="hidden" value="" id="s_role">
+<input type="hidden" value="" id="s_station_url">
+
+<div id="home" class="hidden">
+    <div id="app-status-div">
+        <ul id="app-status-ul">
+            <li>Cordova PushNotification Plugin Demo</li>
+        </ul>
+    </div>
+</div>
+ <select data-role="none" class="form-control hidden" id="shop-load">
+ </select>
+</body>
+</html>

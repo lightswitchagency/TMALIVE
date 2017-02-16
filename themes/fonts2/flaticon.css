@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.new.flaticon-logout20:before {
+	content: "\e099";
+}
+.new.flaticon-profile27:before {
+	content: "\e001";
+}
+.new.flaticon-question58:before {
+	content: "\e002";
+}
+.new.flaticon-send4:before {
+	content: "\e003";
+}
+.new.flaticon-transport10:before {
+	content: "\e004";
+}

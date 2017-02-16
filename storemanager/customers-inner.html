@@ -1,0 +1,33 @@
+<div id="customers-inner" data-role="page" data-theme="a">
+    <div data-role="header" data-position="inline">
+        <a href="#mainmenu" data-role="none"
+           class="jqm-navmenu-link ui-btn ui-btn-icon-notext  ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <h1>Customer Details</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <div class="list-content">    </div>
+
+            <div id="customer-details" class="tabs">
+
+            </div>
+            <div data-role="tabs" class="tabs hidden"  id="tabs">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#billing" class="ui-btn-active"  data-ajax="false"><i class="fa fa-credit-card"></i></a></li>
+                        <li><a href="#shipping" data-ajax="false"><i class="fa fa-truck"></i></a></li>
+                    </ul>
+                </div>
+                <div id="billing" class="ui-content">
+                </div>
+                <div id="shipping" class=" ui-content">
+                </div>
+            </div>
+            <div id="orders" class="tabs">
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer">
+    </div>
+</div>

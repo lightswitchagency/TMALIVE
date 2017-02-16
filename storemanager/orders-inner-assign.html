@@ -1,0 +1,44 @@
+<div data-role="page" id="orders-inner-assign" data-theme="a">
+    <div data-role="header" data-position="inline">
+        <a href="#mainmenu" data-role="none"
+           class="jqm-navmenu-link ui-btn ui-btn-icon-notext  ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+
+        <h1> Assign Order for Delivery </h1>
+    </div>
+    <div data-role="content" data-theme="a">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 ">
+
+                <div id="assign" class="tabs">
+                    <div class="form-group">
+                        <strong> Assign order <label id="ordernumberspan"></label>  for delivery  </strong>
+                    </div>
+
+                    <div class="form-group">
+                        <label> Assign Rider </label>
+                        <select data-role="none" id="deliveryusers" class="form-control user-select">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label> Comment </label>
+                        <textarea data-role="none" class="form-control" id="reason"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="notify_customer" checked="true" value="1" data-role="none"
+                               class="checkbox-inline"> <span> Notify the Customer of Assignment </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="notify_rider" checked="true" value="1" data-role="none"
+                               class="checkbox-inline"> <span> Notify the Rider of the new Task </span>
+                    </div>
+
+                    <div class="form-group">
+                        <button id="order-assign-btn" data-role="none" class="btn bg-danger"> Assign Delivery</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer">
+    </div>
+</div>

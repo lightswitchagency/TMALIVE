@@ -1,0 +1,50 @@
+<div id="custom" data-role="page" data-theme="a">
+    <div data-role="header" data-position="inline">
+        <a href="#mainmenu" data-role="none"
+           class="jqm-navmenu-link ui-btn ui-btn-icon-notext  ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <h1>Dashboard</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+        <div class="row mainrow">
+            <div data-role="navbar">
+                <ul>
+                    <li><a data-transition="slide" href="index.html" data-ajax="true">Today</a></li>
+                    <li><a data-transition="slide" href="week.html" data-ajax="true">This Week</a></li>
+                    <li><a data-transition="slide" href="month.html" data-ajax="true">This Month</a></li>
+                    <li><a data-transition="slide" href="year.html" data-ajax="true">This Year</a></li>
+                    <li><a data-transition="slide" href="custom.html" class="ui-btn-active" data-ajax="true">Custom</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="  col-sm-12   col-xs-12 ">
+                <div   class="cont-div  filter-content">
+                    <select id="custom-period-select"   class="form-control">
+                        <!--  <option value="0"> Last 3 days </option> -->
+                        <option value="1"> Last 7 days</option>
+                        <option value="2"> Previous Week</option>
+                        <option value="3"> Previous Month</option>
+                        <option value="4"> This Quarter</option>
+                        <option value="8"> Last Quarter</option>
+                        <option value="5"> This Year</option>
+                        <option value="6"> Last Year</option>
+                        <!--    <option value="9"> Full Period </option>-->
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="clearfix">
+                <br></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12  col-xs-12 ">
+                <div class="cont-div dashboard-content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer">
+    </div>
+</div>
