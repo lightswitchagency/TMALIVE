@@ -1,8 +1,8 @@
 var HASH = "aHR0cDovL2NyZThpdmVkZ2UubmV0L3RvdGFsc2hvcC8=";
 
 
-var ROOT_URL = "http://app-eboutiquekenya-hp.azurewebsites.net/?connector=mobileassistant&hash=" + HASH;
-var ROOT_URLX = "http://shop.total.co.ke/?connector=mobileassistant&hash=" + HASH;
+var ROOT_URLX = "http://app-eboutiquekenya-hp.azurewebsites.net/?connector=mobileassistant&hash=" + HASH;
+var ROOT_URL = "http://shop.total.co.ke/?connector=mobileassistant&hash=" + HASH;
 var APPENDURL = "?connector=mobileassistant&hash=" + HASH;
 var remote_url = "";
 
